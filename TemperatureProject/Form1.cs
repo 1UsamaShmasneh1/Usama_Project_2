@@ -29,7 +29,7 @@ namespace TemperatureProject
 
         private void txtGetTemp_Click(object sender, EventArgs e)
         {
-
+            double temp = temperature[8];
         }
     }
 }

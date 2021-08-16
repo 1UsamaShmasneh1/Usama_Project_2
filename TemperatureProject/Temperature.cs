@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TemperatureProject
 {
-    class Temperature
+    public class Temperature
     {
         public string City { get; set; }
         public int Date { get; set; }
