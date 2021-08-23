@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace HomeWorkGenerecs
 {
-    public class GenericClassIntDoubleStringChar<T> : GenericConstraint<int, double, string, char>
+    public class GenericClassIntDoubleStringChar<T>: GenericConstraint<int, double, string, char>
     {
-        public GenericClassIntDoubleStringChar(): base(typeof(T))
+        public GenericClassIntDoubleStringChar() : base(typeof(T))
         {
 
         }

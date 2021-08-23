@@ -10,11 +10,10 @@ namespace HomeWorkGenerecs
     {
         public GenericConstraint(Type type)
         {
-            if(!(type is T1) || !(type is T2) || !(type is T3) || !(type is T4))
+            if(type is not T1 and not T2 and not T3 and not T4)
             {
                 throw new Exception("this not supported type");
             }
-
         }
     }
 }

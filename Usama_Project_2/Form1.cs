@@ -1,7 +1,9 @@
-﻿using System;
+﻿using HomeWorkGenerecs;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -34,7 +36,9 @@ namespace Usama_Project_2
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            GenericClassIntDoubleStringChar<bool> num = new GenericClassIntDoubleStringChar<bool>();
+            num.Add(true);
+            Debug.WriteLine(num[0]);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

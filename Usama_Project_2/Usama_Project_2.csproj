@@ -6,4 +6,8 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HomeWorkGenerecs\HomeWorkGenerecs.csproj" />
+  </ItemGroup>
+
 </Project>

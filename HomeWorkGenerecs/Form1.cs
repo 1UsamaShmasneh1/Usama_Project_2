@@ -20,9 +20,14 @@ namespace HomeWorkGenerecs
 
         private void button1_Click(object sender, EventArgs e)
         {
-            GenericClassIntDoubleStringChar<int> num = new GenericClassIntDoubleStringChar<int>();
-            num.Add(0);
+            GenericClassIntDoubleStringChar<bool> num = new GenericClassIntDoubleStringChar<bool>();
+            num.Add(true);
             Debug.WriteLine(num[0]);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
