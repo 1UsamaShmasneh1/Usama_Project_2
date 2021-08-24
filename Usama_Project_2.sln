@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hospital", "Hospital\Hospit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWorkGenerecs", "HomeWorkGenerecs\HomeWorkGenerecs.csproj", "{4EFE577D-4AE9-4FF6-85D4-776BB9A7A406}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassTraining", "ClassTraining\ClassTraining.csproj", "{660FF4D8-53D7-49F5-86E7-847502E27254}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constraints", "Constraints\Constraints.csproj", "{5E54BF45-FA95-4330-A6C1-2765C4C1B310}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{4EFE577D-4AE9-4FF6-85D4-776BB9A7A406}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4EFE577D-4AE9-4FF6-85D4-776BB9A7A406}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4EFE577D-4AE9-4FF6-85D4-776BB9A7A406}.Release|Any CPU.Build.0 = Release|Any CPU
+		{660FF4D8-53D7-49F5-86E7-847502E27254}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{660FF4D8-53D7-49F5-86E7-847502E27254}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{660FF4D8-53D7-49F5-86E7-847502E27254}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{660FF4D8-53D7-49F5-86E7-847502E27254}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E54BF45-FA95-4330-A6C1-2765C4C1B310}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E54BF45-FA95-4330-A6C1-2765C4C1B310}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E54BF45-FA95-4330-A6C1-2765C4C1B310}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E54BF45-FA95-4330-A6C1-2765C4C1B310}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

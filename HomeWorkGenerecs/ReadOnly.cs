@@ -9,20 +9,16 @@ namespace HomeWorkGenerecs
     class ReadOnly<T>
     {
         private bool IsReadOnly { get; set; }
-        T[] Array
+        T[] Array { get; set; }
+        int count = 0;
+        public void Add(T t)
         {
-            get
+            switch (IsReadOnly)
             {
-                return Array;
+                case false:
+                    throw new InvalidOperationException("");
             }
-            set
-            {
-                switch (IsReadOnly)
-                {
-                    case false:
-                        throw new InvalidOperationException("");
-                }
-            }
+            Array[count] = t;
         }
     }
 }
