@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Hospital
+namespace HomeWorkListsAndExtensions
 {
     public partial class Form1 : Form
     {
@@ -17,10 +17,5 @@ namespace Hospital
             InitializeComponent();
         }
 
-        private void buttonEnterId_Click(object sender, EventArgs e)
-        {
-            Person person = new Person(1, "", "", "", 6);
-            
-        }
     }
 }
