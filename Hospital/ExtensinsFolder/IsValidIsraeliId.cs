@@ -13,16 +13,18 @@ namespace Hospital
             int sum = 0;
             int counter = 1;
             string temp;
+            string ch;
             if (id.Length == 9)
             {
-                foreach (char ch in id)
+                foreach (char cha in id)
                 {
-                    if (counter++ % 2 == 0)
+                    ch = Convert.ToString(cha);
+                    if (counter % 2 == 0)
                     {
                         if (Convert.ToInt32(ch) * 2 > 9)
                         {
                             temp = Convert.ToString(Convert.ToInt32(ch) * 2);
-                            sum += Convert.ToInt32(temp[0]) + Convert.ToInt32(temp[1]);
+                            sum += Convert.ToInt32(Convert.ToString(temp[0])) + Convert.ToInt32(Convert.ToString(temp[1]));
                         }
                         else
                         {
@@ -33,6 +35,7 @@ namespace Hospital
                     {
                         sum += Convert.ToInt32(ch);
                     }
+                    counter++;
                 }
                 if (sum % 10 == 0)
                     return true;
