@@ -17,7 +17,7 @@ namespace HomeWorkListsAndExtensions
             {
                 foreach (char ch in id)
                 {
-                    if (counter % 2 == 0)
+                    if (counter++ % 2 == 0)
                     {
                         if (Convert.ToInt32(ch) * 2 > 9)
                         {

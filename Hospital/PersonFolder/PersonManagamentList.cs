@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hospital
 {
-    class PersonManagamentList<T>: List<T> where T: Person
+    public class PersonManagamentList<T>: List<T> where T: Person
     {
         public T GetByFullName(string fullName)
         {

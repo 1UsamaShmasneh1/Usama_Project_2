@@ -8,7 +8,7 @@ namespace Hospital
 {
     public static class ConvertToSickPerson
     {
-        public static SickPerson ConvertToSickPersonFunk(Person person)
+        public static SickPerson ConvertToSickPersonFunk(this Person person)
         {
             SickPerson.turns++;
             SickPerson sickPerson = new SickPerson(person.Id, person.FarstName, person.LastName, person.Gender, person.Age);

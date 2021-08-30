@@ -23,18 +23,18 @@ namespace Hospital
 
         private void buttonEnterId_Click(object sender, EventArgs e)
         {
-            Person person = people.GetById(TextBoxEnterId.Text.ToString());
-            SickPerson sickPerson = ConvertToSickPerson.ConvertToSickPersonFunk(person);
             try
             {
-                if (!TextBoxEnterId.Text.ToString().IsValidIsraeliIdNumber())
+                if (!TextBoxEnterId.Text.ToString().IsValidIsraeliIdNumber())// || !people.IsFoundPersonFunk(TextBoxEnterId.Text.ToString()))
                 {
                     throw new NotValidIsraeliIdExeption();
                 }
+                Person person = people.GetById(TextBoxEnterId.Text.ToString());
+                SickPerson sickPerson = person.ConvertToSickPersonFunk();
                 sickpeople.Add(sickPerson);
                 MessageBox.Show($"your turn is {sickPerson.NumOfTurn}");
             }
-            catch (NotValidIsraeliIdExeption ex)
+            catch (NotValidIsraeliIdExeption)
             {
                 MessageBox.Show("Not Valid Id !");
             }

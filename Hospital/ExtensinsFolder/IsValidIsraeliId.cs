@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Hospital
 {
-    static class Extensions
-    {
+    public static class IsValidIsraeliId
+    {        
         public static bool IsValidIsraeliIdNumber(this string id)
         {
             int sum = 0;
@@ -17,7 +17,7 @@ namespace Hospital
             {
                 foreach (char ch in id)
                 {
-                    if (counter % 2 == 0)
+                    if (counter++ % 2 == 0)
                     {
                         if (Convert.ToInt32(ch) * 2 > 9)
                         {
