@@ -8,13 +8,13 @@ namespace Hospital
 {
     public class Person
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
         public string FarstName { get; set; }
         public string LastName { get; set; }
         public string Gender { get; set; }
         public int Age { get; set; }
         public virtual bool IsSick { get; set; } = false;
-        public Person(int id, string farstName, string lastName, string gender, int age)
+        public Person(string id, string farstName, string lastName, string gender, int age)
         {
             Id = id;
             FarstName = farstName;

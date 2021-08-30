@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HomeWorkListsAndExtensions
+namespace Hospital
 {
-    static class Extensions6
+    static class Extensions
     {
         public static bool IsValidIsraeliIdNumber(this string id)
         {

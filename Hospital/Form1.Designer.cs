@@ -30,9 +30,9 @@ namespace Hospital
         private void InitializeComponent()
         {
             this.GetTurn = new System.Windows.Forms.GroupBox();
-            this.labelEnterId = new System.Windows.Forms.Label();
-            this.textBoxEnterId = new System.Windows.Forms.TextBox();
             this.buttonEnterId = new System.Windows.Forms.Button();
+            this.labelEnterId = new System.Windows.Forms.Label();
+            this.TextBoxEnterId = new System.Windows.Forms.TextBox();
             this.GetTurn.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -40,29 +40,13 @@ namespace Hospital
             // 
             this.GetTurn.Controls.Add(this.buttonEnterId);
             this.GetTurn.Controls.Add(this.labelEnterId);
-            this.GetTurn.Controls.Add(this.textBoxEnterId);
+            this.GetTurn.Controls.Add(this.TextBoxEnterId);
             this.GetTurn.Location = new System.Drawing.Point(0, 2);
             this.GetTurn.Name = "GetTurn";
             this.GetTurn.Size = new System.Drawing.Size(124, 94);
             this.GetTurn.TabIndex = 1;
             this.GetTurn.TabStop = false;
             this.GetTurn.Text = "GetTurn";
-            // 
-            // labelEnterId
-            // 
-            this.labelEnterId.AutoSize = true;
-            this.labelEnterId.Location = new System.Drawing.Point(42, 19);
-            this.labelEnterId.Name = "labelEnterId";
-            this.labelEnterId.Size = new System.Drawing.Size(47, 15);
-            this.labelEnterId.TabIndex = 2;
-            this.labelEnterId.Text = "Enter Id";
-            // 
-            // textBoxEnterId
-            // 
-            this.textBoxEnterId.Location = new System.Drawing.Point(12, 37);
-            this.textBoxEnterId.Name = "textBoxEnterId";
-            this.textBoxEnterId.Size = new System.Drawing.Size(100, 23);
-            this.textBoxEnterId.TabIndex = 1;
             // 
             // buttonEnterId
             // 
@@ -73,6 +57,22 @@ namespace Hospital
             this.buttonEnterId.Text = "Conferm";
             this.buttonEnterId.UseVisualStyleBackColor = true;
             this.buttonEnterId.Click += new System.EventHandler(this.buttonEnterId_Click);
+            // 
+            // labelEnterId
+            // 
+            this.labelEnterId.AutoSize = true;
+            this.labelEnterId.Location = new System.Drawing.Point(42, 19);
+            this.labelEnterId.Name = "labelEnterId";
+            this.labelEnterId.Size = new System.Drawing.Size(47, 15);
+            this.labelEnterId.TabIndex = 2;
+            this.labelEnterId.Text = "Enter Id";
+            // 
+            // TextBoxEnterId
+            // 
+            this.TextBoxEnterId.Location = new System.Drawing.Point(12, 37);
+            this.TextBoxEnterId.Name = "TextBoxEnterId";
+            this.TextBoxEnterId.Size = new System.Drawing.Size(100, 23);
+            this.TextBoxEnterId.TabIndex = 1;
             // 
             // Form1
             // 
@@ -91,7 +91,7 @@ namespace Hospital
         #endregion
         private System.Windows.Forms.GroupBox GetTurn;
         private System.Windows.Forms.Label labelEnterId;
-        private System.Windows.Forms.TextBox textBoxEnterId;
+        private System.Windows.Forms.TextBox TextBoxEnterId;
         private System.Windows.Forms.Button buttonEnterId;
     }
 }
