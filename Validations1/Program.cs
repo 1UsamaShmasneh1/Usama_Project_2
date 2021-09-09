@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Hospital
+namespace Validations1
 {
     static class Program
     {
@@ -17,8 +17,7 @@ namespace Hospital
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
-            PersonManagamentList<Person> people = new PersonManagamentList<Person>();
+            Application.Run(new StudentManagament());
         }
     }
 }

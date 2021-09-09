@@ -11,11 +11,11 @@ using System.Windows.Forms;
 namespace Hospital
 {
 
-    public partial class Form1 : Form
+    public partial class GetTurnForm : Form
     {
         PersonManagamentList<Person> people = new PersonManagamentList<Person>();
         SickPersonManagamentList<SickPerson> sickpeople = new SickPersonManagamentList<SickPerson>();
-        public Form1()
+        public GetTurnForm()
         {
             InitializeComponent();
             people.Add(new Person("308127125", "usama", "shmasneh", "male", 30));
@@ -25,7 +25,7 @@ namespace Hospital
         {
             try
             {
-                if (!TextBoxEnterId.Text.ToString().IsValidIsraeliIdNumber())// || !people.IsFoundPersonFunk(TextBoxEnterId.Text.ToString()))
+                if (!TextBoxEnterId.Text.ToString().IsValidIsraeliIdNumber() || !people.IsFoundPersonFunk(TextBoxEnterId.Text.ToString()))
                 {
                     throw new NotValidIsraeliIdExeption();
                 }
@@ -38,6 +38,10 @@ namespace Hospital
             {
                 MessageBox.Show("Not Valid Id !");
             }
+            MainForm f = new MainForm();
+            Hide();
+            f.ShowDialog();
+            Show();
         }
     }
 }

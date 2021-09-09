@@ -28,7 +28,7 @@ namespace HomeWorkListsAndExtensions
             {
                 return "thirteen";
             }
-            else if (num > 20)
+            else if (num < 20)
             {
                 return $"{numsStr1[num - 9]} {numsStr2[0]}";
             }
@@ -36,7 +36,7 @@ namespace HomeWorkListsAndExtensions
             {
                 return $"{numsStr2[num / 10 - 1]}";
             }
-            else if (num <= 100)
+            else if (num < 100)
             {
                 return $"{numsStr2[num / 10 - 1]} {numsStr1[num % 10 +1]}";
             }
